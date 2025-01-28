@@ -1,4 +1,10 @@
-
+table {
+  page-break-inside: auto;
+}
+tr {
+  page-break-inside: avoid;
+  page-break-after: auto;
+}
 .invoice-container {
     display: flex;
     justify-content: center;
@@ -141,15 +147,26 @@
     body{
         font-size: 12px;
     }
+    * {
+      -webkit-print-color-adjust: exact !important; /* Ensures colors are printed */
+      print-color-adjust: exact !important;
+    }
+    table, tr, td {
+      page-break-inside: avoid !important;
+    }
     .print-btn {
       display: none;
     }
     .invoice-box {
         width: 100% !important;
         max-width: 100% !important;
-        box-shadow: none;
-        margin: 0;
-        padding: 20px;
+    }
+    .totals{
+      width: 42%;
+      margin-left: auto;
+    }
+    .info .col-lg-6{
+      width: 50%;
     }
   }
   
