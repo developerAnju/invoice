@@ -1,0 +1,138 @@
+
+.invoice-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .invoice-box {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .invoice-details {
+    margin: 0px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+  .invoice-details p{
+    margin: 10px 0;
+  }
+  
+  .info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .info p{
+    margin: 0;
+  }
+  .info h3{
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  table th{
+    color: #fff;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    background-color: transparent;
+  }
+  .invoice-box .table_data{
+    border: 1px solid #dbdfea;
+    overflow: hidden;
+    border-radius: 6px;
+  }
+  
+  .totals{
+    margin-left: auto;
+  }
+  .totals p{
+    margin: 10px 0;
+    text-align: right;
+    /* border-bottom: 1px solid #ddd; */
+  }
+  .totals td{
+    border: none;
+  }
+  .totals .grand_total{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background-color: #007aff;
+    color: #fff;
+  }
+  .totals .grand_total b{
+    color: #fff;
+  }
+  .totals table{
+    background-color: #f5f6fa;
+  }
+  .totals table tr td b{
+    background-color: transparent;
+  }
+  .totals h2{
+    text-align: end;
+    font-size: 14px;
+  }
+  .terms {
+    background: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+  }
+  .terms h3{
+    font-size: 14px;
+  }
+  .terms ul li{
+    font-size: 14px;
+  }
+  
+  .print-btn {
+    border: none;
+    background-color: rgba(0, 122, 255, 0.1);
+    text-align: center;
+    padding: 10px;
+  }
+  .table-light{
+    background-color: #007aff;
+    color: #fff;
+  }
+  
+  @media print {
+    body{
+        font-size: 12px;
+    }
+    .print-btn {
+      display: none;
+    }
+    .invoice-box {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-shadow: none;
+        margin: 0;
+        padding: 20px;
+    }
+  }
+  
